@@ -1,5 +1,6 @@
 <div align="center">
-  <h1>🎵 Tikinaja</h1>
+  <img src="public/logo.png" alt="Tikinaja Logo" width="100" height="100" style="border-radius: 16px;" />
+  <h1>Tikinaja</h1>
   <p><strong>Download TikTok videos without watermark & audio (MP3) — fast, free, and open source.</strong></p>
   <p>
     <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js" /></a>

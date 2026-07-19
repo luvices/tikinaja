@@ -15,8 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tikinaja | Fast TikTok Downloader",
-  description: "Download TikTok videos without watermark and audio MP3 quickly and easily. Minimalist and fast.",
+  title: "Tikinaja | TikTok Downloader No Watermark",
+  description: "Download video TikTok tanpa watermark dan audio MP3 secara gratis. Multi-link, cepat, dan aman.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "Tikinaja",
+    description: "Download video TikTok tanpa watermark, gratis.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
