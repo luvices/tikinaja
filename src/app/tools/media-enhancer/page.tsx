@@ -152,9 +152,9 @@ export default async function UpscalerPage() {
         </div>
       </div>
 
-      <Script src="/tools-scripts/upscale/webm-muxer.min.js" strategy="afterInteractive" />
-      <Script src="/tools-scripts/upscale-gpu-enhancer.js" strategy="beforeInteractive" />
-      <Script src="/tools-scripts/upscale-tool.js" strategy="afterInteractive" />
+      <Script src="/tools-scripts/upscale/webm-muxer.min.js?v=2" strategy="afterInteractive" />
+      <Script src="/tools-scripts/upscale-gpu-enhancer.js?v=2" strategy="afterInteractive" />
+      <Script src="/tools-scripts/upscale-tool.js?v=2" strategy="afterInteractive" />
     </ToolPageLayout>
   );
 }
