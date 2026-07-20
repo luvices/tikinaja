@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "about": "About"
+  },
+  "home": {
+    "title_1": "Download TikToks",
+    "title_2": "Tanpa Watermark.",
+    "subtitle": "Paste satu atau banyak link TikTok, lalu download semuanya sekaligus.",
+    "input_placeholder": "https://www.tiktok.com/@user/video/...",
+    "btn_paste": "Paste",
+    "btn_add_more": "Tambah Link",
+    "btn_fetching": "Fetching",
+    "btn_fetch_all": "Fetch"
+  },
+  "tools": {
+    "badge_9tools": "9 tools · Gratis · Tanpa login",
+    "page_title_1": "Tools untuk",
+    "page_title_2": "Creator",
+    "page_desc": "Dari kompresi video, ekstrak audio, sampai AI upscaler — semua browser-based, langsung pakai.",
+    "badge_popular": "Populer",
+    "footer_desc": "9 tools · Browser-based & server-side · Tidak ada data yang disimpan."
+  },
+  "toolCards": {
+    "xml_optimizer": {
+      "title": "5MB XML Generator",
+      "subtitle": "Alight Motion",
+      "desc": "Proses file proyek Alight Motion (.xml) agar ukurannya di bawah batas 5MB — berguna untuk berbagi preset ke pengguna gratis."
+    },
+    "project_converter": {
+      "title": "Project Converter",
+      "subtitle": "AE → AM",
+      "desc": "Konversi data beatmark / penanda ketukan dari Adobe After Effects ke format XML Alight Motion. Sinkronisasi musik yang dibuat di PC bisa langsung dilanjutkan di HP."
+    },
+    "audio_extractor": {
+      "title": "Audio Extractor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Pisahkan trek audio dari file video manapun dan export langsung sebagai MP3 — tanpa upload ke server, semua proses di browser."
+    },
+    "seq_renderer": {
+      "title": "Sequence Renderer",
+      "subtitle": "AM Zip Exporter",
+      "desc": "Gabungkan sekuens gambar dari Alight Motion Export (.zip) menjadi satu video. Tambahkan audio opsional, atur FPS dan bitrate."
+    },
+    "media_enhancer": {
+      "title": "Media Enhancer",
+      "subtitle": "AI Upscaler",
+      "desc": "Tingkatkan resolusi dan ketajaman gambar atau video menggunakan AI WebGL. Berbagai preset tersedia: Cartoonist, Human Detail, Smooth Face, dan lainnya."
+    },
+    "upload_optimizer": {
+      "title": "Quality Method",
+      "subtitle": "TikTok HQ Upload",
+      "desc": "Kompresi & optimasi video agar upload ke TikTok dengan kualitas tertinggi. Tidak pecah, tidak buram — format ideal 1080p 60fps H.264 VBR."
+    },
+    "social_analytics": {
+      "title": "TikTok Statistics",
+      "subtitle": "Metadata Analyser",
+      "desc": "Analisis lengkap metadata video TikTok — resolusi, durasi, FPS, ukuran file, dan statistik engagement. Cukup paste URL."
+    },
+    "video_compressor": {
+      "title": "Video Compressor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Perkecil ukuran file video langsung di browser menggunakan FFmpeg WASM. Codec H.264 CRF 20 — balance sempurna antara ukuran kecil dan kualitas tajam."
+    },
+    "motion_smoother": {
+      "title": "Motion Smoother",
+      "subtitle": "FPS Upscaler",
+      "desc": "Tingkatkan jumlah frame per detik (FPS) video secara artifisial — ubah video 24fps atau 30fps menjadi 60fps+ dengan frame interpolation."
+    }
+  },
+  "toolPages": {
+    "drag_drop_xml": "Drag & drop Alight Motion XML",
+    "xml_opt_drop_sub": "File .xml dari proyek Alight Motion",
+    "drag_drop_video": "Drag & drop video di sini",
+    "vid_comp_drop_sub": "atau klik untuk memilih · Maks 1.5 GB",
+    "vid_comp_btn": "Mulai Kompresi",
+    "soc_ana_input": "https://www.tiktok.com/@user/video/...",
+    "soc_ana_btn": "Analisis",
+    "soc_ana_res": "Resolusi",
+    "soc_ana_fps": "FPS",
+    "soc_ana_bitrate": "Bitrate",
+    "soc_ana_dur": "Durasi",
+    "soc_ana_size": "Ukuran File",
+    "mot_smooth_drop_sub": "MP4, MOV, WebM · Butuh WebGPU",
+    "mot_smooth_fps_in": "FPS Input",
+    "mot_smooth_fps_out": "FPS Target",
+    "mot_smooth_mult": "Multiplier",
+    "mot_smooth_btn": "Mulai Interpolasi",
+    "audio_ext_drop_sub": "MP4, MOV, AVI, MKV, WebM · Maks 1.5 GB",
+    "audio_ext_btn": "Ekstrak Audio → MP3",
+    "drag_drop_ae": "Drag & drop file AE di sini",
+    "proj_conv_drop_sub": "File .xml atau .aepx dari Adobe After Effects",
+    "proj_conv_config": "Pengaturan Proyek Alight Motion",
+    "proj_conv_comp": "Komposisi",
+    "proj_conv_title": "Judul Proyek",
+    "proj_conv_fps": "Frame Rate (FPS)",
+    "proj_conv_width": "Lebar (px)",
+    "proj_conv_height": "Tinggi (px)",
+    "proj_conv_dur": "Durasi Total (ms)",
+    "drag_drop_media": "Drag & drop gambar atau video",
+    "media_enh_drop_sub": "MP4, MOV, PNG, JPG, WebP · Diproses via WebGL di browser",
+    "upload_opt_drop_sub": "atau klik untuk memilih · MP4, MOV, AVI, MKV",
+    "seq_rend_zip": "File ZIP Alight Motion",
+    "drag_drop_zip": "Drag & drop .zip di sini",
+    "seq_rend_zip_sub": "AM Export ZIP dengan sekuens gambar",
+    "seq_rend_audio": "Audio (Opsional)",
+    "seq_rend_audio_add": "Tambah audio latar (opsional)"
+  },
+  "common": {
+    "btn_process": "Proses",
+    "btn_cancel": "Batalkan"
+  }
+}

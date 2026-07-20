@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "about": "About"
+  },
+  "home": {
+    "title_1": "Download TikToks",
+    "title_2": "Without Watermark.",
+    "subtitle": "Paste one or multiple TikTok links, then download them all at once.",
+    "input_placeholder": "https://www.tiktok.com/@user/video/...",
+    "btn_paste": "Paste",
+    "btn_add_more": "Add Link",
+    "btn_fetching": "Fetching",
+    "btn_fetch_all": "Fetch"
+  },
+  "tools": {
+    "badge_9tools": "9 tools · Free · No login",
+    "page_title_1": "Tools for",
+    "page_title_2": "Creators",
+    "page_desc": "From video compression and audio extraction to AI upscalers — fully browser-based, ready to use.",
+    "badge_popular": "Popular",
+    "footer_desc": "9 tools · Browser-based & server-side · No data is stored."
+  },
+  "toolCards": {
+    "xml_optimizer": {
+      "title": "5MB XML Generator",
+      "subtitle": "Alight Motion",
+      "desc": "Process Alight Motion project files (.xml) to keep them under the 5MB limit — useful for sharing presets with free users."
+    },
+    "project_converter": {
+      "title": "Project Converter",
+      "subtitle": "AE → AM",
+      "desc": "Convert beatmark data from Adobe After Effects to Alight Motion XML format. Seamlessly sync music from PC to Mobile."
+    },
+    "audio_extractor": {
+      "title": "Audio Extractor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Extract audio tracks from any video file and export directly as MP3 — no server uploads, fully in-browser."
+    },
+    "seq_renderer": {
+      "title": "Sequence Renderer",
+      "subtitle": "AM Zip Exporter",
+      "desc": "Combine image sequences from Alight Motion Export (.zip) into a single video. Add optional audio, set FPS and bitrate."
+    },
+    "media_enhancer": {
+      "title": "Media Enhancer",
+      "subtitle": "AI Upscaler",
+      "desc": "Enhance video and image resolution using WebGL AI. Various presets available: Cartoonist, Human Detail, Smooth Face, and more."
+    },
+    "upload_optimizer": {
+      "title": "Quality Method",
+      "subtitle": "TikTok HQ Upload",
+      "desc": "Compress & optimize videos for TikTok upload at the highest quality. No pixelation, no blur — ideal 1080p 60fps H.264 VBR format."
+    },
+    "social_analytics": {
+      "title": "TikTok Statistics",
+      "subtitle": "Metadata Analyser",
+      "desc": "Full analysis of TikTok video metadata — resolution, duration, FPS, file size, and engagement stats. Just paste the URL."
+    },
+    "video_compressor": {
+      "title": "Video Compressor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Reduce video file sizes directly in your browser using FFmpeg WASM. H.264 CRF 20 codec — perfect balance between small size and sharp quality."
+    },
+    "motion_smoother": {
+      "title": "Motion Smoother",
+      "subtitle": "FPS Upscaler",
+      "desc": "Artificially increase video frames per second (FPS) — convert 24fps or 30fps videos to 60fps+ with frame interpolation."
+    }
+  },
+  "toolPages": {
+    "drag_drop_xml": "Drag & drop Alight Motion XML",
+    "xml_opt_drop_sub": ".xml file from Alight Motion project",
+    "drag_drop_video": "Drag & drop video here",
+    "vid_comp_drop_sub": "or click to select · Max 1.5 GB",
+    "vid_comp_btn": "Start Compression",
+    "soc_ana_input": "https://www.tiktok.com/@user/video/...",
+    "soc_ana_btn": "Analyse",
+    "soc_ana_res": "Resolution",
+    "soc_ana_fps": "FPS",
+    "soc_ana_bitrate": "Bitrate",
+    "soc_ana_dur": "Duration",
+    "soc_ana_size": "File Size",
+    "mot_smooth_drop_sub": "MP4, MOV, WebM · Requires WebGPU",
+    "mot_smooth_fps_in": "Input FPS",
+    "mot_smooth_fps_out": "Target FPS",
+    "mot_smooth_mult": "Multiplier",
+    "mot_smooth_btn": "Start Interpolation",
+    "audio_ext_drop_sub": "MP4, MOV, AVI, MKV, WebM · Max 1.5 GB",
+    "audio_ext_btn": "Extract Audio → MP3",
+    "drag_drop_ae": "Drag & drop AE file here",
+    "proj_conv_drop_sub": ".xml or .aepx file from Adobe After Effects",
+    "proj_conv_config": "Alight Motion Project Settings",
+    "proj_conv_comp": "Composition",
+    "proj_conv_title": "Project Title",
+    "proj_conv_fps": "Frame Rate (FPS)",
+    "proj_conv_width": "Width (px)",
+    "proj_conv_height": "Height (px)",
+    "proj_conv_dur": "Total Duration (ms)",
+    "drag_drop_media": "Drag & drop image or video",
+    "media_enh_drop_sub": "MP4, MOV, PNG, JPG, WebP · Processed via WebGL",
+    "upload_opt_drop_sub": "or click to select · MP4, MOV, AVI, MKV",
+    "seq_rend_zip": "Alight Motion ZIP File",
+    "drag_drop_zip": "Drag & drop .zip here",
+    "seq_rend_zip_sub": "AM Export ZIP with image sequence",
+    "seq_rend_audio": "Audio (Optional)",
+    "seq_rend_audio_add": "Add background audio (optional)"
+  },
+  "common": {
+    "btn_process": "Process",
+    "btn_cancel": "Cancel"
+  }
+}

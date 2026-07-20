@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "tools": "Werkzeuge",
+    "about": "Über uns"
+  },
+  "home": {
+    "title_1": "TikToks Herunterladen",
+    "title_2": "Ohne Wasserzeichen.",
+    "subtitle": "Füge einen oder mehrere TikTok-Links ein und lade alle auf einmal herunter.",
+    "input_placeholder": "https://www.tiktok.com/@user/video/...",
+    "btn_paste": "Einfügen",
+    "btn_add_more": "Link hinzufügen",
+    "btn_fetching": "Abrufen",
+    "btn_fetch_all": "Alle Abrufen"
+  },
+  "tools": {
+    "badge_9tools": "9 Werkzeuge · Kostenlos · Kein Login",
+    "page_title_1": "Werkzeuge für",
+    "page_title_2": "Kreative",
+    "page_desc": "Von Videokomprimierung bis zu KI-Upscalern — alles browserbasiert und sofort einsatzbereit.",
+    "badge_popular": "Beliebt",
+    "footer_desc": "9 Werkzeuge · Browserbasiert & Serverseitig · Keine Daten gespeichert."
+  },
+  "toolCards": {
+    "xml_optimizer": {
+      "title": "5MB XML Generator",
+      "subtitle": "Alight Motion",
+      "desc": "Verarbeite Alight Motion Projektdateien (.xml), um sie unter dem 5MB Limit zu halten — nützlich zum Teilen von Presets."
+    },
+    "project_converter": {
+      "title": "Projektkonverter",
+      "subtitle": "AE → AM",
+      "desc": "Konvertiere Beatmark-Daten von Adobe After Effects ins Alight Motion XML-Format. Synchronisiere Musik nahtlos vom PC aufs Handy."
+    },
+    "audio_extractor": {
+      "title": "Audio-Extraktor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Extrahiere Audiospuren aus jedem Video und exportiere sie direkt als MP3 — ohne Server-Uploads, komplett im Browser."
+    },
+    "seq_renderer": {
+      "title": "Sequenz-Renderer",
+      "subtitle": "AM Zip Exporter",
+      "desc": "Kombiniere Bildsequenzen aus Alight Motion Export (.zip) zu einem einzigen Video. Füge optionales Audio hinzu, stelle FPS und Bitrate ein."
+    },
+    "media_enhancer": {
+      "title": "Medien-Verbesserer",
+      "subtitle": "KI-Upscaler",
+      "desc": "Verbessere die Video- und Bildauflösung mit WebGL-KI. Verschiedene Presets verfügbar: Cartoonist, Human Detail, Smooth Face, etc."
+    },
+    "upload_optimizer": {
+      "title": "Qualitätsmethode",
+      "subtitle": "TikTok HQ Upload",
+      "desc": "Komprimiere und maximiere Videos für TikTok-Uploads in höchster Qualität. Keine Verpixelung, keine Unschärfe — ideales 1080p 60fps H.264 VBR-Format."
+    },
+    "social_analytics": {
+      "title": "TikTok-Statistiken",
+      "subtitle": "Metadaten-Analysator",
+      "desc": "Vollständige Analyse von TikTok-Video-Metadaten — Auflösung, Dauer, FPS, Dateigröße und Engagement-Statistiken. Füge einfach die URL ein."
+    },
+    "video_compressor": {
+      "title": "Videokompressor",
+      "subtitle": "FFmpeg WASM",
+      "desc": "Reduziere Videodateigrößen direkt in deinem Browser mit FFmpeg WASM. H.264 CRF 20 Codec — perfekte Balance zwischen kleiner Größe und scharfer Qualität."
+    },
+    "motion_smoother": {
+      "title": "Bewegungsglätter",
+      "subtitle": "FPS-Upscaler",
+      "desc": "Erhöhe künstlich die Bilder pro Sekunde (FPS) deines Videos — konvertiere 24fps oder 30fps Videos auf 60fps+ mit Frame-Interpolation."
+    }
+  },
+  "toolPages": {
+    "drag_drop_xml": "Alight Motion XML hierher ziehen",
+    "xml_opt_drop_sub": ".xml-Datei aus einem Alight Motion-Projekt",
+    "drag_drop_video": "Video hierher ziehen",
+    "vid_comp_drop_sub": "oder klicken zur Auswahl · Max 1.5 GB",
+    "vid_comp_btn": "Komprimierung Starten",
+    "soc_ana_input": "https://www.tiktok.com/@user/video/...",
+    "soc_ana_btn": "Analysieren",
+    "soc_ana_res": "Auflösung",
+    "soc_ana_fps": "FPS",
+    "soc_ana_bitrate": "Bitrate",
+    "soc_ana_dur": "Dauer",
+    "soc_ana_size": "Dateigröße",
+    "mot_smooth_drop_sub": "MP4, MOV, WebM · Erfordert WebGPU",
+    "mot_smooth_fps_in": "Eingangs-FPS",
+    "mot_smooth_fps_out": "Ziel-FPS",
+    "mot_smooth_mult": "Multiplikator",
+    "mot_smooth_btn": "Interpolation Starten",
+    "audio_ext_drop_sub": "MP4, MOV, AVI, MKV, WebM · Max 1.5 GB",
+    "audio_ext_btn": "Audio Extrahieren → MP3",
+    "drag_drop_ae": "AE-Datei hierher ziehen",
+    "proj_conv_drop_sub": ".xml- oder .aepx-Datei von Adobe After Effects",
+    "proj_conv_config": "Alight Motion Projekteinstellungen",
+    "proj_conv_comp": "Komposition",
+    "proj_conv_title": "Projekttitel",
+    "proj_conv_fps": "Bildrate (FPS)",
+    "proj_conv_width": "Breite (px)",
+    "proj_conv_height": "Höhe (px)",
+    "proj_conv_dur": "Gesamtdauer (ms)",
+    "drag_drop_media": "Bild oder Video hierher ziehen",
+    "media_enh_drop_sub": "MP4, MOV, PNG, JPG, WebP · Über WebGL verarbeitet",
+    "upload_opt_drop_sub": "oder klicken zur Auswahl · MP4, MOV, AVI, MKV",
+    "seq_rend_zip": "Alight Motion ZIP-Datei",
+    "drag_drop_zip": ".zip hierher ziehen",
+    "seq_rend_zip_sub": "AM-Export-ZIP mit Bildsequenz",
+    "seq_rend_audio": "Audio (Optional)",
+    "seq_rend_audio_add": "Hintergrundaudio hinzufügen (optional)"
+  },
+  "common": {
+    "btn_process": "Verarbeiten",
+    "btn_cancel": "Abbrechen"
+  }
+}

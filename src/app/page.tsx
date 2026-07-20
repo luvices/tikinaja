@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, Loader2, ClipboardPaste, Plus, X, Download } from "lucide-react";
 import { VideoCard, type VideoData } from "@/components/VideoCard";
+import { ToolsTeaser } from "@/components/ToolsTeaser";
+import { useI18n } from "@/i18n/I18nProvider";
 
 interface LinkItem {
   id: string;
@@ -17,6 +19,7 @@ let nextId = 1;
 const makeId = () => String(nextId++);
 
 export default function Home() {
+  const { t } = useI18n();
   const [links, setLinks] = useState<LinkItem[]>([{ id: makeId(), url: "", status: "idle" }]);
   const [pastedId, setPastedId] = useState<string | null>(null);
   const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
@@ -94,11 +97,11 @@ export default function Home() {
         className="w-full max-w-3xl text-center"
       >
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          Download TikToks <br className="hidden sm:block" />
-          <span className="text-neutral-400">Without Watermark.</span>
+          {t("home.title_1")} <br className="hidden sm:block" />
+          <span className="text-neutral-400">{t("home.title_2")}</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-neutral-600 dark:text-neutral-400">
-          Paste satu atau banyak link TikTok, lalu download semuanya sekaligus.
+          {t("home.subtitle")}
         </p>
 
         <form onSubmit={handleFetchAll} className="mx-auto mt-10 max-w-xl space-y-3">
@@ -125,7 +128,7 @@ export default function Home() {
                   <input
                     ref={(el) => { inputRefs.current[link.id] = el; }}
                     type="url"
-                    placeholder="https://www.tiktok.com/@user/video/..."
+                    placeholder={t("home.input_placeholder")}
                     value={link.url}
                     onChange={(e) => updateUrl(link.id, e.target.value)}
                     className={`w-full rounded-2xl border bg-background py-3.5 pl-11 pr-28 text-sm shadow-sm outline-none transition-all placeholder:text-neutral-400 focus:ring-1
@@ -161,7 +164,7 @@ export default function Home() {
                             </motion.span>
                           ) : (
                             <motion.span key="paste" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                              Paste
+                              {t("home.btn_paste")}
                             </motion.span>
                           )}
                         </AnimatePresence>
@@ -210,7 +213,7 @@ export default function Home() {
               className="flex items-center gap-1.5 rounded-xl border border-neutral-200 bg-background px-4 py-2.5 text-sm font-medium text-neutral-600 transition-all hover:border-foreground hover:text-foreground active:scale-95 dark:border-neutral-700 dark:text-neutral-400"
             >
               <Plus className="h-4 w-4" />
-              Tambah Link
+              {t("home.btn_add_more")}
             </button>
 
             <button
@@ -221,12 +224,12 @@ export default function Home() {
               {isAnyLoading ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin" />
-                  Fetching {links.filter((l) => l.status === "loading").length} video...
+                  {t("home.btn_fetching")} {links.filter((l) => l.status === "loading").length}
                 </>
               ) : (
                 <>
                   <Download className="h-4 w-4" />
-                  Fetch {filledLinks.length > 1 ? `${filledLinks.length} Videos` : "Video"}
+                  {t("home.btn_fetch_all")} {filledLinks.length > 1 ? `(${filledLinks.length})` : ""}
                 </>
               )}
             </button>
@@ -239,6 +242,11 @@ export default function Home() {
         {doneResults.map((link) => (
           <VideoCard key={link.id} data={link.data!} />
         ))}
+      </AnimatePresence>
+
+      {/* soft tools discovery — appears after first successful download */}
+      <AnimatePresence>
+        {doneResults.length > 0 && <ToolsTeaser />}
       </AnimatePresence>
     </div>
   );
