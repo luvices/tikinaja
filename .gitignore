@@ -46,5 +46,5 @@ CLAUDE.md
 planning.md
 scratch/
 
-# build scripts (source only, obfuscated output is in public/)
-scripts/
+# build scripts (*.src.js are local-only source, obfuscated output is in public/)
+scripts/*.src.js
