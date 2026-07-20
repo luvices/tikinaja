@@ -45,3 +45,6 @@ AGENTS.md
 CLAUDE.md
 planning.md
 scratch/
+
+# build scripts (source only, obfuscated output is in public/)
+scripts/
