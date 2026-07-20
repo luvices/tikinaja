@@ -7,38 +7,30 @@
 
   // ─── IMMEDIATE PAUSE ──────────────────────────────────────────────────────
   // Fires synchronously before any HTML renders.
-  // If DevTools is open, execution stops HERE before the user sees the page.
+  // If DevTools is open when page loads, execution stops here.
   debugger; // eslint-disable-line no-debugger
 
   // ─── MID-SESSION DETECTION → RELOAD ──────────────────────────────────────
+  // Method 1: regex getter — toString() ONLY called when DevTools is open
+  // and actively formatting the object for display. Reliable, no false positives.
   var _open = false;
-
-  // Method 1: regex getter — toString() only called when DevTools formats it
   var _det = /./;
   _det.toString = function () { _open = true; };
 
-  // Method 2: timing — debugger takes >100 ms when DevTools paused
-  function timingCheck() {
-    var t0 = performance.now();
-    debugger; // eslint-disable-line no-debugger
-    return performance.now() - t0 > 100;
-  }
-
-  // Method 3: window size diff (docked DevTools)
+  // Method 2: window size diff — only for docked DevTools (desktop)
+  // Threshold 200px to avoid false positives from browser chrome / taskbar
   function sizeCheck() {
-    return window.outerHeight - window.innerHeight > 150 ||
-           window.outerWidth  - window.innerWidth  > 150;
+    return (window.outerHeight - window.innerHeight > 200) ||
+           (window.outerWidth  - window.innerWidth  > 200);
   }
 
-  // Runs every 300ms — reloads page the moment DevTools is detected
   setInterval(function () {
     _open = false;
-    console.log(_det);
+    console.log(_det); // triggers _det.toString() only when DevTools console is open
     console.clear();
 
-    if (_open || sizeCheck() || timingCheck()) {
-      // Force reload → triggers immediate debugger pause again on next load
+    if (_open || sizeCheck()) {
       window.location.reload();
     }
-  }, 300);
+  }, 500);
 })();
