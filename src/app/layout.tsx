@@ -50,6 +50,7 @@ export default async function RootLayout({
           <main className="flex-1 flex flex-col">{children}</main>
           <Footer />
         </I18nProvider>
+        <Script src="/anti-devtools.js" strategy="afterInteractive" />
       </body>
     </html>
   );
