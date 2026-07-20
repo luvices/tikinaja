@@ -394,14 +394,14 @@
             // Check GPU
             if (gpuReady) {
                 if (gpuDot) {
-                    gpuDot.textContent = 'check_circle';
+                    gpuDot.textContent = '✅';
                     gpuDot.style.color = '#4CAF50';
                     gpuDot.classList.remove('upscale-spinner');
                 }
                 if (gpuStatus) gpuStatus.textContent = window.getTranslation('upscale_ready_gpu');
             } else {
                 if (gpuDot) {
-                    gpuDot.textContent = 'cancel';
+                    gpuDot.textContent = '❌';
                     gpuDot.style.color = '#F44336';
                     gpuDot.classList.remove('upscale-spinner');
                 }
@@ -412,14 +412,14 @@
             const ffmpegReady = !!window.FFmpegWASM;
             if (ffmpegReady) {
                 if (webcodecsDot) {
-                    webcodecsDot.textContent = 'check_circle';
+                    webcodecsDot.textContent = '✅';
                     webcodecsDot.style.color = '#4CAF50';
                     webcodecsDot.classList.remove('upscale-spinner');
                 }
                 if (webcodecsStatus) webcodecsStatus.textContent = window.getTranslation('upscale_ready_ffmpeg');
             } else {
                 if (webcodecsDot) {
-                    webcodecsDot.textContent = 'cancel';
+                    webcodecsDot.textContent = '❌';
                     webcodecsDot.style.color = '#F44336';
                     webcodecsDot.classList.remove('upscale-spinner');
                 }
@@ -430,7 +430,7 @@
             const aiReady = engine && engine.isReady;
             if (aiReady) {
                 if (engineDot) {
-                    engineDot.textContent = 'check_circle';
+                    engineDot.textContent = '✅';
                     engineDot.style.color = '#4CAF50';
                     engineDot.classList.remove('upscale-spinner');
                 }
@@ -438,7 +438,7 @@
             } else {
                 if (attempts > 10) {
                     if (engineDot) {
-                        engineDot.textContent = 'cancel';
+                        engineDot.textContent = '❌';
                         engineDot.style.color = '#F44336';
                         engineDot.classList.remove('upscale-spinner');
                     }
@@ -531,19 +531,19 @@
 
     function checkSystemAndContinueImage() {
         if (engineDot) {
-            engineDot.textContent = 'sync';
+            engineDot.textContent = '🔄';
             engineDot.style.color = 'var(--md-sys-color-primary)';
             engineDot.classList.add('upscale-spinner');
         }
         if (engineStatus) engineStatus.textContent = 'AI Engine: Checking...';
         if (gpuDot) {
-            gpuDot.textContent = 'sync';
+            gpuDot.textContent = '🔄';
             gpuDot.style.color = 'var(--md-sys-color-primary)';
             gpuDot.classList.add('upscale-spinner');
         }
         if (gpuStatus) gpuStatus.textContent = 'GPU Canvas: Checking...';
         if (webcodecsDot) {
-            webcodecsDot.textContent = 'check_circle';
+            webcodecsDot.textContent = '✅';
             webcodecsDot.style.color = '#4CAF50';
             webcodecsDot.classList.remove('upscale-spinner');
         }
@@ -553,18 +553,18 @@
         const interval = setInterval(() => {
             attempts++;
             if (gpuReady) {
-                if (gpuDot) { gpuDot.textContent = 'check_circle'; gpuDot.style.color = '#4CAF50'; gpuDot.classList.remove('upscale-spinner'); }
+                if (gpuDot) { gpuDot.textContent = '✅'; gpuDot.style.color = ''; gpuDot.classList.remove('upscale-spinner'); }
                 if (gpuStatus) gpuStatus.textContent = 'GPU Canvas: Ready';
             } else {
-                if (gpuDot) { gpuDot.textContent = 'cancel'; gpuDot.style.color = '#F44336'; gpuDot.classList.remove('upscale-spinner'); }
+                if (gpuDot) { gpuDot.textContent = '❌'; gpuDot.style.color = ''; gpuDot.classList.remove('upscale-spinner'); }
                 if (gpuStatus) gpuStatus.textContent = 'GPU Canvas: Unavailable';
             }
             const aiReady = engine && engine.isReady;
             if (aiReady) {
-                if (engineDot) { engineDot.textContent = 'check_circle'; engineDot.style.color = '#4CAF50'; engineDot.classList.remove('upscale-spinner'); }
+                if (engineDot) { engineDot.textContent = '✅'; engineDot.style.color = ''; engineDot.classList.remove('upscale-spinner'); }
                 if (engineStatus) engineStatus.textContent = 'AI Engine: Ready';
             } else if (attempts > 10) {
-                if (engineDot) { engineDot.textContent = 'cancel'; engineDot.style.color = '#F44336'; engineDot.classList.remove('upscale-spinner'); }
+                if (engineDot) { engineDot.textContent = '❌'; engineDot.style.color = ''; engineDot.classList.remove('upscale-spinner'); }
                 if (engineStatus) engineStatus.textContent = 'AI Engine: Timeout/Failed';
             }
             if ((aiReady && gpuReady) || attempts > 10) {

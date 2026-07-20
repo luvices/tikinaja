@@ -37,7 +37,7 @@ export default async function UpscalerPage() {
               { dotId: "upscale-webcodecs-dot", statusId: "upscale-webcodecs-status", label: "WebCodecs" },
             ].map(({ dotId, statusId, label }) => (
               <div key={dotId} className="flex items-center gap-2 text-sm">
-                <span id={dotId} className="h-2 w-2 rounded-full bg-neutral-300 shrink-0"></span>
+                <span id={dotId} className="shrink-0 flex items-center justify-center w-4 text-[10px]"></span>
                 <span className="text-neutral-500 w-24 shrink-0">{label}</span>
                 <span id={statusId} className="text-neutral-600 dark:text-neutral-400 text-xs">Checking...</span>
               </div>
